@@ -1,0 +1,17 @@
+mat-form-field {
+  width: 40%;
+  padding-bottom: 14px;
+}
+
+button {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 40%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

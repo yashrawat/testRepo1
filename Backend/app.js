@@ -5,6 +5,8 @@ const path = require('path');
 
 const app = express();
 
+const userRoutes = require('./routes/user');
+
 // connecting to mongodb database testRepo1 and server listening to PORT 3000
 mongoose.connect('mongodb://localhost:27017/testRepo1', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
@@ -34,3 +36,4 @@ app.use((req, res, next) => {
 
 
 // add Routes below
+app.use('/api/user', userRoutes);
